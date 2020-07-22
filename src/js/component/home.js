@@ -14,10 +14,10 @@ export default class Home extends React.Component {
 				<div className="rounded mx-auto py-2 trafficLight">
 					<div
 						className={
-							"bg-success rounded-circle mx-auto my-1 light " +
+							"bg-danger rounded-circle mx-auto my-1 light " +
 							this.state
 						}
-						onClick={() => this.setState({ activeLight: "green" })}
+						onClick={() => this.setState({ activeLight: "red" })}
 					/>
 					<div
 						className={
@@ -28,10 +28,10 @@ export default class Home extends React.Component {
 					/>
 					<div
 						className={
-							"bg-danger rounded-circle mx-auto my-1 light " +
+							"bg-success rounded-circle mx-auto my-1 light " +
 							this.state
 						}
-						onClick={() => this.setState({ activeLight: "red" })}
+						onClick={() => this.setState({ activeLight: "green" })}
 					/>
 				</div>
 			</div>
